@@ -46,9 +46,9 @@ void Display::displayBLEScan(int deviceFound, int nbScan) {
   oled.setCursor(0, 0);
   oled.print("EPSILON");
   oled.setCursor(0, 10);
-  oled.println("Nb BLE found:");             // Display "Nb BLE found"
-  oled.print(deviceFound);                   // Display the number of BLE devices found
-  oled.println("Nb Scan: ");
+  oled.print("\nNb BLE Devices found:");         // Display "Nb BLE found"
+  oled.print(deviceFound);                   // Display the number of beacons found
+  oled.print("\nNb Scan: ");
   oled.print(nbScan);                        // Display the scan number
   oled.display();                            // Display the content on the OLED screen
 }

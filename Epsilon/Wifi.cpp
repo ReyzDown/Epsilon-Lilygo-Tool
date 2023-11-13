@@ -23,6 +23,7 @@ void WiFiScanner::Scan(int nbScan) {
         Serial.println(" networks found");
         Serial.println("Nr | SSID                             | RSSI | CH |    Mac Address    | Encryption");
         for (int i = 0; i < n; ++i) {
+            displayWifi(n, nbScan);
             // Print SSID and RSSI for each network found
             Serial.printf("%2d", i + 1);
             Serial.print(" | ");
